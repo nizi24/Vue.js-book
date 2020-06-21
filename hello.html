@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <p v-pre>{{ message }}</p>
+      <p v-text="message"></p>
+      <a v-bind:href="url">WINGS プロジェクト</a>
+      <a :href="url">WINGS プロジェクト</a>
+      <p>{{ localEmail }}</p>
+    </div>
+
+    <script src="lib/vue.js"></script>
+    <script src="js/hello.js"></script>
+  </body>
+</html>
