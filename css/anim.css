@@ -1,0 +1,45 @@
+#panel {
+  border: 1px solid #000;
+  width: 350px;
+  overflow: hidden;
+}
+
+/* .v-enter-active, .v-leave-active {
+  transition: height 1s;
+}
+
+.v-enter {
+  height: 0px;
+}
+
+.v-enter-to {
+  height: 200px;
+}
+
+.v-leave {
+  height: 200px;
+}
+
+.v-leave-to {
+  height: 0px;
+} */
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.v-enter-active {
+  animation: slide-in 1.5s;
+}
+
+.v-leave-active {
+  animation: slide-in 1.5s reverse;
+}
